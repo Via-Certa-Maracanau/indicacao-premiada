@@ -99,4 +99,6 @@ function enviarEmail(indicacao) {
     }).then(
       message => alert(message)
     );
+
+    window.location.reload()
 }
