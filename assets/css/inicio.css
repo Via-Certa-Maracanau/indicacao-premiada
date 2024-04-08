@@ -1,0 +1,115 @@
+#inicio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    background-color: #2E2E86;
+    height: 100vh;
+
+    padding-top: 2rem;
+}
+
+#inicio > h1 {
+    font-size: 20pt;
+    color: white;
+}
+
+#inicio > h1 > span {
+    color: rgb(114, 209, 18);
+}
+
+#inicio > #irFormulario {
+    border: 2px solid rgb(114, 209, 18);
+    border-radius: 20px;
+    font-weight: 500;
+    color: white;
+    background-color: #2E2E86;
+    cursor: pointer;
+
+    padding: .5rem;
+    margin: 4rem 0;
+}
+
+#inicio > #irFormulario:hover {
+    background-color: rgb(114, 209, 18);
+}
+
+#premio {
+    background-color: rgb(60, 69, 185);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 2rem;
+}
+
+#premio > #exalla {
+    width: 50%;
+    float: right;
+    z-index: 1;
+
+    padding-left: 1rem;
+}
+#premio > #fone {
+    width: 15%;
+    float: right;
+    position: absolute;
+    z-index: 1;
+
+    margin: 40% 0 0 85%;
+}
+
+#premio > p {
+    width: 40%;
+    font-size: 12.5pt;
+    font-weight: 500;
+    text-align: center;
+    color: white;
+    z-index: 1;
+}
+
+#premio > p > span {
+    color: rgb(114, 209, 18);
+}
+
+#waveT {
+    position: absolute;
+    margin-bottom: 50%;
+}
+
+#waveB {
+    position: absolute;
+    margin-top: 50%;
+}
+
+@media screen and (min-width: 500px) {
+    body {
+        display: flex;
+        justify-content: center;
+    }
+    #inicio {
+        width: 500px;
+    }
+
+    #waveT {
+        position: absolute;
+        margin-bottom: 250px;
+        width: 500px;
+    }
+    
+    #waveB {
+        position: absolute;
+        margin-top: 250px;
+        width: 500px;
+    }
+
+    #premio > #fone {
+        width: 70px;
+        position: absolute;
+        z-index: 1;
+    
+        margin: 200px 0 0 420px;
+    }
+  }

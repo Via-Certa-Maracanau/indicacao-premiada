@@ -1,0 +1,76 @@
+#formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#formulario > h1 {
+    font-size: 22pt;
+    font-weight: 500;
+    color: rgb(112, 119, 210);
+}
+
+#formulario > span {
+    font-size: 30pt;
+    margin-top: 1rem;
+    color: gray;
+}
+
+#formulario > #enviar {
+    width: 80%;
+    margin: 1rem 0;
+    padding: .5rem;
+    text-align: center;
+    font-size: 11pt;
+    
+    background-color: #2E2E86;
+    color: white;
+    border: 1px solid gray;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#formulario > .row {
+    width: 80%;
+}
+
+#indicacao {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.campos {
+    width: 80%;
+    border: 1px solid gray;
+    border-radius: 10px;
+    padding: 1rem;
+    margin-top: 1rem;
+}
+
+.campos > p {
+    text-align: center;
+    font-weight: 500;
+    color: gray;
+}
+
+#voltar {
+    position: fixed;
+    color: #2E2E86;
+    border-radius: 50%;
+    cursor: pointer;
+
+    margin: 1rem 0 0 .5rem;
+}
+
+
+@media screen and (min-width: 500px) {
+    body {
+        display: flex;
+        justify-content: center;
+    }
+    #formulario {
+        width: 500px;
+    }
+  }
