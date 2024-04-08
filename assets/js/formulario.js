@@ -40,7 +40,7 @@ function campos() {
     
                 <div class="row">
                     <div class="input-field col s12">
-                        <input id="telefone${contador}" name="telefone${contador}" type="number" class="validate">
+                        <input id="telefone${contador}" name="telefone${contador}" type="text" class="validate">
                         <label for="telefone${contador}">Telefone</label>
                     </div>
                 </div>
