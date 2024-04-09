@@ -13,7 +13,7 @@
 #formulario > span {
     font-size: 30pt;
     margin-top: 1rem;
-    color: gray;
+    color: black;
 }
 
 #formulario > #enviar {
@@ -25,13 +25,21 @@
     
     background-color: #2E2E86;
     color: white;
-    border: 1px solid gray;
+    border: 1px solid black;
     border-radius: 10px;
     cursor: pointer;
 }
 
 #formulario > .row {
     width: 80%;
+}
+
+.input-field input[type=text].validate {
+    border-bottom: 1px solid black;
+}
+
+.input-field input[type=text].validate + label {
+    color: dimgray;
 }
 
 #indicacao {
@@ -43,7 +51,7 @@
 
 .campos {
     width: 80%;
-    border: 1px solid gray;
+    border: 1px solid black;
     border-radius: 10px;
     padding: 1rem;
     margin-top: 1rem;
@@ -52,7 +60,7 @@
 .campos > p {
     text-align: center;
     font-weight: 500;
-    color: gray;
+    color: black;
 }
 
 #voltar {
