@@ -113,3 +113,37 @@
         margin: 200px 0 0 420px;
     }
   }
+
+@media screen and (max-width: 400px) {
+    body {
+        display: flex;
+        justify-content: center;
+    }
+    #inicio {
+        width: 360px;
+    }
+
+    #waveT {
+        position: absolute;
+        margin-bottom: 190px;
+        width: 360px;
+    }
+    
+    #waveB {
+        position: absolute;
+        margin-top: 190px;
+        width: 360px;
+    }
+
+    #premio > #fone {
+        width: 50px;
+        position: absolute;
+        z-index: 1;
+    
+        margin: 145px 0 0 300px;
+    }
+
+    #premio > p {
+        font-size: 10pt;
+    }
+}
