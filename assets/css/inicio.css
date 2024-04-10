@@ -147,3 +147,37 @@
         font-size: 10pt;
     }
 }
+
+@media screen and (max-width: 300px) {
+    body {
+        display: flex;
+        justify-content: center;
+    }
+    #inicio {
+        width: 300px;
+    }
+
+    #waveT {
+        position: absolute;
+        margin-bottom: 150px;
+        width: 300px;
+    }
+    
+    #waveB {
+        position: absolute;
+        margin-top: 150px;
+        width: 300px;
+    }
+
+    #premio > #fone {
+        width: 30px;
+        position: absolute;
+        z-index: 1;
+    
+        margin: 130px 0 0 250px;
+    }
+
+    #premio > p {
+        font-size: 9pt;
+    }
+}
