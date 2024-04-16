@@ -26,8 +26,7 @@ function validar(indicacoes) {
     for(let c = 0; c < 10; c++) {
         if(indicacoes.nomeI[c] == undefined) {
             qtde = 10 - indicacoes.nomeI.length
-            alert(`Atenção! \n Para participar do sorteio é necessário preencher todas as 10 indicações. \n \n Quantidade de indicações faltantes: ${qtde}`)
-            validador = false
+            validador = confirm(`Atenção! \n Para participar do sorteio é necessário preencher todas as 10 indicações. \n \n Quantidade de indicações faltantes: ${qtde} \n \n Pressione "OK" para enviar mesmo assim ou "Cancelar" para continuar preenchendo`)
             break
         }else {
             validador = true
