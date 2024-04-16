@@ -9,7 +9,7 @@ function formulario () {
 
             <div class="row">
                 <div class="input-field col s12">
-                    <input id="nome_a" type="text" class="validate" required>
+                    <input id="nome_a" type="text" class="validate">
                     <label for="nome_a">Seu nome completo</label>
                 </div>
             </div>

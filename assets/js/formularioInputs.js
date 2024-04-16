@@ -1,3 +1,5 @@
+var validador = false
+
 function getFormInput() {
     var indicacao = new Object()
     indicacao.nomeI = Array()
@@ -17,5 +19,22 @@ function getFormInput() {
         }
     }
 
-    enviarEmail(indicacao)
+    validar(indicacao)
+}
+
+function validar(indicacoes) {
+    for(let c = 0; c < 10; c++) {
+        if(indicacoes.nomeI[c] == undefined) {
+            qtde = 10 - indicacoes.nomeI.length
+            alert(`Atenção! \n Para participar do sorteio é necessário preencher todas as 10 indicações. \n \n Quantidade de indicações faltantes: ${qtde}`)
+            validador = false
+            break
+        }else {
+            validador = true
+        }
+    }
+
+    if(validador) {
+        enviarEmail(indicacoes)
+    }
 }
